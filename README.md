@@ -22,6 +22,7 @@ Dataset must be in the form of PASCL VOC dataset
 ```
 ```
 Training and Testing
+
 For training and testing run following jupyter notebook file
 Yollo3.ipynb
 Run the cells respectively and change the paths
@@ -33,6 +34,7 @@ Dataset must be in the form of PASCL VOC dataset
 ```
 ```
 Training and Testing
+
 Command for training - change the paths
 retinanet-train --freeze-backbone --backbone resnet50 --no-resize --compute-val-loss --random-transform --weights C:\Users\saad\simd\keras-retinanet/weights/resnet50_coco_best_v2.h5 --batch-size 8 --steps 100 --epochs 100 --multiprocessing --compute-val-loss --weighted-average --snapshot-path C:\Users\saad\simd\keras-retinanet/snapshots csv annotations.csv classes.csv
 
