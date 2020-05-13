@@ -1,0 +1,40 @@
+{
+    "model" : {
+        "min_input_size":       256,
+        "max_input_size":       256,
+        "anchors":              [16,21, 20,45, 26,75, 33,28, 39,49, 61,33, 67,83, 103,150, 212,274],
+        "labels":               ["car", "van", "truck", "bus", "other", "airliner", "stairtruck", "pushbacktruck", "longvehicle", "propeller", "chartered", "helicopter", "trainer", "boat", "fighter"]
+    },
+
+    "train": {
+        "train_image_folder":   "/content/drive/My Drive/acv_ass2_modified/yolo/dataset/JPEGImages/",
+        "train_annot_folder":   "/content/drive/My Drive/acv_ass2_modified/yolo/dataset/Annotations/",
+        "cache_name":           "yolo3.pkl",
+
+        "train_times":          8,
+        "batch_size":           16,
+        "learning_rate":        1e-4,
+        "nb_epochs":            70,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "/content/drive/My Drive/acv_ass2_modified/yolo3/logs/logs",
+        "saved_weights_name":   "/content/drive/My Drive/acv_ass2_modified/yolo3/weights/yolo3.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "/content/drive/My Drive/acv_ass2_modified/yolo/dataset/validation/images/",
+        "valid_annot_folder":   "/content/drive/My Drive/acv_ass2_modified/yolo/dataset/validation/annots/",
+        
+        "cache_name":           "yolo3.pkl",
+        "valid_times":          1
+    }
+}
