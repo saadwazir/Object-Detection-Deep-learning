@@ -3,9 +3,12 @@
 This repo contains code from several github repos - Thankx to them :)
 
 retinanet : https://github.com/fizyr/keras-retinanet
+
 yolo : https://github.com/experiencor/keras-yolo3
+
 Faster-RCNN : https://github.com/RockyXu66/Faster_RCNN_for_Open_Images_Dataset_Keras
 
+-----------------------------------------------------
 
 ## Faster - RCNN
 ```
